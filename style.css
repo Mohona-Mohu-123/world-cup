@@ -9,10 +9,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .container{
+    width: 930px;
+
+}
+.section-area{
     background-color:#ffffff;
-    width: 870px;
     padding: 30px;
  
 }
@@ -44,7 +48,7 @@ main{
     border-radius: 5px;
 }
 .banner-img{
-    width: 40%;
+    width: 50%;
     margin-left: 20px;
     
 }
@@ -128,32 +132,36 @@ main{
     font-size: 18px;
     border-radius:8px ;
 }
-footer{
+
+.footer{
     background-color: black;
-    text-align: center;
-    width: 77.5%;
+    width: 990px;
     height: 300px;
+    text-align: center;
 }
-footer h1{
-    color: hwb(0 75% 24%);
-    margin-top: 70px;
-    font-size: 24px;
+.footer h1{
+    color: rgb(150, 144, 144);
+    margin-top: 40px;
 }
-footer hr{
-    border: 1px solid rgb(49, 49, 49);
-    width: 90%;
+hr{
+    border: 0.1px solid rgb(76, 74, 74);
+    width: 930px;
     margin-bottom: 30px;
 }
-footer a{
+.anchor a{
     text-decoration: none;
-    color: #878282;
-    padding: 14px;
-    font-size: 12px;
+    color: #858282;
+    padding: 20px;
+    font-size: 14px;
 }
-.fab{
-    color: #9f9c9c;
-    padding: 14px;
+.ifram i{
+    color: #858282;
+    margin-top: 30px;
+    padding-left: 20px;
 }
+
+
+
 
 /*-------------------------
          mobile device
@@ -189,7 +197,7 @@ footer a{
         
     }
     footer{
-        width: 110%;
+        /* width: 110%; */
         /* flex-direction: column; */
     }
     footer a{
@@ -235,7 +243,7 @@ footer a{
         visibility: visible;
     }
     footer{
-        width: 110%;
+        /* width: 110%; */
         flex-direction: column;
     }
 }

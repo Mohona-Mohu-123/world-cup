@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    background-color: rgb(228, 228, 228);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color:#ffffff;
+    width: 870px;
+    padding: 30px;
+ 
+}
+.banner-area{
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+}
+.button{
+    transition: color 5s;
+}
+.button:hover{
+    background-color:rgb(24, 132, 137) ;
+}
+.banner-info{
+    color: #ffffff;
+    width: 55%;
+    margin-left: 20px;
+}
+.banner-info h1{
+    font-size: 50px;
+}
+.banner-info a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: red;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+.banner-img{
+    width: 40%;
+    margin-left: 20px;
+    
+}
+.blogs{
+    display: flex;
+}
+.blog-1{
+    background-color: black;
+    height: 230px;
+    width: 25%;
+    margin-right: 10px;
+    border-radius: 6px;
+    
+    
+}
+.blog-1 a{
+    text-decoration: none;
+    /* background-color: #ffffff; */
+    display:block;
+    padding: 10px;
+    margin-top: 25px;
+
+}
+.blog-i{
+    background-color: #d0c6c6;
+    color:black;
+    margin: 12px;
+    text-align: center;
+    border-radius: 6px;
+
+} 
+.mini{
+    background-color: red;
+    color: #ffffff;
+    padding: 8px;
+    margin: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+.blogs-item, .blogs-item2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 16px;
+    width: 80%;
+}
+.blogs-item2{
+    text-align: center;
+}
+.blog{
+    background-color: aliceblue;
+    border-radius: 6px;
+    /* height: 290px; */
+}
+.blog-info{
+    padding: 10px;
+
+}
+.blog-img img{
+    width: 100%;
+}
+.blog-img2{
+    display: flex;
+    padding: 4px;
+}
+.blog-img2 img{
+    width: 100%;
+}
+.time-comment span{
+    margin-right: 20px;
+}
+.view{
+    text-align: center;
+    visibility: hidden;
+}
+.view a{
+    text-decoration: none;
+    background-color: rgb(220, 18, 18);
+    color: #ffffff;
+    padding:20px 50px;
+    font-size: 18px;
+    border-radius:8px ;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    width: 77.5%;
+    height: 300px;
+}
+footer h1{
+    color: hwb(0 75% 24%);
+    margin-top: 70px;
+    font-size: 24px;
+}
+footer hr{
+    border: 1px solid rgb(49, 49, 49);
+    width: 90%;
+    margin-bottom: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: #878282;
+    padding: 14px;
+    font-size: 12px;
+}
+.fab{
+    color: #9f9c9c;
+    padding: 14px;
+}
+
+/*-------------------------
+         mobile device
+------------------------- */
+@media screen and (max-width:767px){
+    .container{
+        width: 90%;
+    }
+    .banner-area{
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-info{
+        margin: 15px;
+    }
+    .blogs{
+        flex-direction: column;
+    }
+    .blog-1{
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .blogs-item, .blogs-item2{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        
+    }
+    footer{
+        width: 110%;
+        /* flex-direction: column; */
+    }
+    footer a{
+        flex-direction: column;
+        /* text-align: center; */
+        padding: 5px;
+        
+        
+    }
+}
+/*------------------------------ tablet device---------------------------- */
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .container{
+        width: 100%;
+
+    }   
+    .blogs{
+        flex-direction: column;
+    } 
+    .blog-1{
+        justify-content:center;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        background-color: #ffffff;
+        display: flex;
+       
+    }
+    .mini, .blog-i{
+        
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .blogs-item,.blogs-item2{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        
+    }
+    .view{
+        text-align: center;
+        visibility: visible;
+    }
+    footer{
+        width: 110%;
+        flex-direction: column;
+    }
+}
